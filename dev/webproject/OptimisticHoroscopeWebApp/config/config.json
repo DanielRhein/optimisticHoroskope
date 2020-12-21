@@ -1,0 +1,58 @@
+{
+  "development":
+  {
+    "config_id": "development",
+    "app_name": "Optimistic Horoscope",
+    "app_desc": "Entertainment",
+    "node_port": 3000,
+    "json_identation": 4,
+    "database_name": "optimistichoroscopewebapp",
+    "database_user": "optimistichoroscopewebapp",
+    "database_password": "optimistichoroscopewebapp",
+    "database_port": "5432",
+    "database_host": "localhost",
+    "database_installed": true,
+    "drive": "postgres",
+    "website_contact_name": "XXXX XXXXX",
+    "website_contact_phone": "XXXXX-XXXXXX",
+    "website_contact_street": "XXXX,
+    "website_contact_routenumber": "X",
+    "website_contact_plz": "XXXXX",
+    "website_contact_city": "XXXXXX",
+    "website_contact_email": "test@test.de",
+    "twitterConsumerKey": "XX",
+    "twitterConsumerSecret": "XX",
+    "twitterAccessTokenKey": "XX",
+    "twitterAccesTokenSecret": "XX",
+    "server_protocol": "http"
+  },
+  "test-mysql":
+  {
+   "config_id": "test-mysql",
+   "database_name": "optimistichoroscopewebapp",
+   "database_user": "optimistichoroscopewebapp",
+   "database_password": "optimistichoroscopewebapp",
+   "drive": "mysql"
+  },
+  "test-postgres":
+  {
+   "config_id": "test-postgres",
+   "database_name": "optimistichoroscopewebapp",
+   "database_user": "optimistichoroscopewebapp-test",
+   "database_password": "optimistichoroscopewebapp-test",
+   "drive": "postgres"
+  },
+  "production":
+  {
+   "config_id": "production",
+   "node_port": 3000,
+   "database_name": "optimistichoroscopewebapp",
+   "database_user": "optimistichoroscopewebapp",
+   "database_password": "optimistichoroscopewebapp",
+   "database_port": 5432,
+   "database_host": "0.0.0.0",
+   "drive": "mysql",
+   "website_contact_phone": "XXX",
+   "website_contact_email": "XXX"
+  }
+}
