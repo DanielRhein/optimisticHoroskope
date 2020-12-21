@@ -1,0 +1,14 @@
+@startuml
+ [ express ] as ex
+ [ sequelizer]  as seq
+ [ ex ] -> [horoscope_route]
+ [ ex ]  -> [impressum_route]
+ [ ex ]  -> [datenschutz_route]
+ [pug] -> [horoscope_template]
+ [pug] -> [horoscopedetails_template]
+ [pug] -> [impressum_template]
+ [pug] -> [datenschutzerklaerung_template]
+ [seq] -> [horoscope_db]
+ [ex] ..>  [pug] : use
+ [ex] ..>  [seq] : use
+@enduml[]

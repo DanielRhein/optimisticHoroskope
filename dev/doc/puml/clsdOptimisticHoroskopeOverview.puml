@@ -1,0 +1,37 @@
+@startuml
+enum AstrologicalSign
+class Prophecy
+
+Horoscope *.. AstrologicalSign : has 12 per day >
+Horoscope *- Prophecy : has per day and sign
+Prophecy *- AstrologicalSign : use >
+
+class Prophecy {
+  String getPropecy(int dayOfYear,AstrologicalSign sign);
+  +Prophecy();
+}
+
+enum AstrologicalSign {
+  Capricorn(1,22.12.99,20.1.99),
+  Aquarius(2,21.1.99,19.2.99),
+  Pisces(3,20.2.99,20.3.99),
+  Aries(4,21.3.99,20.4.99),
+  Taurus(5,21.4.99,20.5.99),
+  Gemini(6,21.5.99,21.6.99),
+  Cancer(7,22.6.99,22.7.99),
+  Leo(8,23.7.99,23.8.99),
+  Virgo(9,24.8.99,23.9.99),
+  Libra(10,24.9.99,23.10.99),
+  Scorpio(11,24.10.99,22.11.99),
+Sagittarius(12,23.11.99,21.12.99);
+====
+ -AstrologicalSign(int id,Date from,Date until);
+ +Date getFrom();
+ +Date getUntil();
+ +int getId();
+}
+
+class Horoscope {
+
+}
+@enduml

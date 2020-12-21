@@ -1,0 +1,20 @@
+@startuml
+entity horoscope {
+ id : number <<generated>>
+ --
+ year : number
+ dayOfYear  : number
+ astrological_sign : number
+ prophecy_text_id : number <<FK>>
+ }
+
+ prophecy_text
+ {
+  id : number << generated >>
+  --
+  text_de : string
+  text_en : string
+ }
+
+ horoscope||--prophecy_text
+@enduml
