@@ -3,5 +3,10 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(name='viewport', content='width=device-width')
   body
-    block content
+   nav
+     a(href='/') Horoskop
+     a(href='/impressum')  Impressum
+     a(href='/datenschutz')  Datenschutz
+   block content
