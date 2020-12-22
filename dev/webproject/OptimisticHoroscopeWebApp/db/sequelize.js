@@ -15,15 +15,15 @@ Horoscope.init({
   primaryKey: true
  },
  doj: {
-  type: DataTypes.INT,
+  type: DataTypes.INTEGER,
   allowNull: false
  },
  astrological_sign: {
-  type: DataTypes.INT,
+  type: DataTypes.INTEGER,
   allowNull: false
  },
  prophecy_text_id: {
-  type: DataTypes.INT,
+  type: DataTypes.INTEGER,
   allowNull:false
  }
 }, {
@@ -34,14 +34,14 @@ Horoscope.init({
 
 ProphecyText.init({
   id: {
-   type: DataTypes.INT,
+   type: DataTypes.INTEGER,
    primaryKey: true
   },
   text_de: {
-   type: DataTypes.VARCHAR(255)
+   type: DataTypes.STRING(255)
   },
   text_en: {
-   type: DataTypes.VARCHAR(255),
+   type: DataTypes.STRING(255),
   }
  }, {
    // Other models options go here
