@@ -1,0 +1,5 @@
+extends layout
+block content
+ - var asrologicalSign = [ 'Steinbock 22.12 - 20.1', 'Wassermann 21.1 - 19.2','Fische 20.2 - 20.3', 'Widder 21.3 - 20.4', 'Stier 21.4 - 20.5', 'Zwilling 21.5 - 21.6', 'Krebs 22.6 - 22.7', 'Loewe 23.7 - 23.8', 'Jungfrau 24.8 - 23.9','Waage 24.9 - 23.10','Skorpion 24.10 - 22.11','Schuetze 23.11 - 21.12'];
+   p <img src='/images/astrolocialsign/#{id}.png'> #{asrologicalSign[id-1]}
+   p #{text}

@@ -25,7 +25,7 @@ Horoscope as well as prophecy and astrological_sign needs to be define in the pr
 ## F2.4 create templates
 Create templates for impressum, datenschutz horoscope and implement it.
 
-## F2.5 create tests
+## F2.5 create tests (not yet)
 Determine what test environment is the most appropriate and test the application.
 
 # M3 create more documents
